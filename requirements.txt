@@ -1,0 +1,12 @@
+# Libraries used by Marketing_Campaign_Analysis.ipynb
+pandas>=2.0
+numpy
+matplotlib
+seaborn
+
+# Only needed to run the notebook in a virtual environment (Option B in the README)
+jupyterlab
+ipykernel
+
+# Optional: only needed to recreate the raw files with download_data.py
+# completejourney_py
