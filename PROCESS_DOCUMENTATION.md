@@ -4,7 +4,7 @@ This document describes what was done, why, and what was found. The code is in `
 
 ## 1. Dataset overview
 
-**Source:** The Complete Journey (84.51° Complete Journey study), exported from the Python package `completejourney_py` to CSV files in `Dataset/` (script: `download_data.py`) and loaded in the notebook with `pd.read_csv`. The R version of the dataset describes frequent shoppers at a retailer; the Python package's README calls the data simulated and educational. This is a learning project, so the findings describe this dataset only.
+**Source:** The Complete Journey (84.51° Complete Journey study), loaded in the notebook with `pd.read_csv`. The R version of the dataset describes frequent shoppers at a retailer; the Python package's README calls the data simulated and educational. This is a learning project, so the findings describe this dataset only.
 
 | Table | Rows | One row is | Used for |
 |---|---|---|---|
@@ -17,7 +17,6 @@ This document describes what was done, why, and what was found. The code is in `
 
 Not used: `products` and `promotions` (not needed to measure the campaigns).
 
-**Task examples versus this data.** The task lists click-through rate, cost per acquisition, channel and region as examples. There are no impressions, clicks or regions, so equivalents were used: redemption rate (response rate), cost per redemption (cost per acquisition), sales per discount dollar (ROI proxy), baskets per household (engagement), campaign type (channel), age/income/household composition (audience), start month and duration (timing).
 
 ## 2. Data exploration findings (notebook Step 1)
 

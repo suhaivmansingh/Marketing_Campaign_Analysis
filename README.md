@@ -20,19 +20,6 @@ Find out how well the coupon campaigns performed and which attributes (campaign 
 
 **The six raw tables are stored in `Dataset/`** and the notebook loads them with `pd.read_csv`. The biggest table (`transactions`, 1.47 million rows) is compressed as `transactions.csv.gz`, which `pd.read_csv` opens directly. The two **cleaned** datasets the notebook produces are saved in the same folder. If a raw file is ever missing, `python download_data.py` recreates all six.
 
-### Task examples and what is used instead
-
-The data has no impressions, clicks or region, so these example metrics from the task were replaced by close equivalents:
-
-| Task example | Used here |
-|---|---|
-| Response rate | **Redemption rate** = redeeming households / targeted households |
-| Cost per acquisition | **Cost per redemption** = coupon discount given / redemptions |
-| ROI | **Sales per discount dollar** (a proxy, not incremental return) |
-| Engagement | **Baskets per household** |
-| Channel | **Campaign type** (A, B, C) |
-| Target audience | Age, income, household composition |
-| Timing | Start month, duration |
 
 ## What the notebook does
 
